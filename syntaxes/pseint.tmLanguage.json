@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "pseint",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.pseint",
+				"match": "\\b(Si|Mientras|Para|Entonces)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.pseint",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.pseint",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.psc"
+}

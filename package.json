@@ -1,0 +1,25 @@
+{
+    "name": "pseintsyntaxishighlighter",
+    "displayName": "pseIntSyntaxisHighlighter",
+    "description": "Extension de pseint para vscode",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.58.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "pseint",
+            "aliases": ["pseint", "pseint"],
+            "extensions": ["psc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "pseint",
+            "scopeName": "source.psc",
+            "path": "./syntaxes/pseint.tmLanguage.json"
+        }]
+    }
+}
